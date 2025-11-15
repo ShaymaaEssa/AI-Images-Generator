@@ -1,0 +1,75 @@
+:root {
+  --color-bg-1: #310e68;   /* your main dark purple */
+  --color-bg-2: #5f0f40;   /* your gradient plum */
+
+  --color-primary: #c77dff;  /* soft bright purple */
+  --color-accent: #ff77e9;   /* electric pink accent */
+  --color-secondary: #6a4c93; /* muted purple */
+
+  --color-text-light: #ffffff; /* main text */
+  --color-text-muted: #d9caff; /* soft muted lilac */
+  --color-card-bg: #3e1a71;    /* perfect for cards on your background */
+  --color-input-bg: #4a235a;   /* input fields background */
+  --color-border: #7f43b6;     /* borders, dividers */
+}
+
+*{
+
+    box-sizing: border-box !important;
+}
+
+body{
+    background-color: #310e68;
+background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-bg-1);
+  margin:0 !important;
+}
+
+.btn-primary {
+  background: var(--color-input-bg);
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 18px;
+  border: none;
+  transition: .3s;
+}
+
+.btn-primary:hover {
+  background: var(--color-accent);
+}
+
+.card{
+    border: 10px solid var(--color-border) !important;
+    border-width: 10px 0 0 0 !important;
+    
+}
+
+.logo-icon{
+    background-color: var(--color-bg-1);
+}
+
+.icon{
+    background-color: var(--color-primary);
+}
+
+textarea{
+    background-color: var(--color-text-muted) !important;
+    
+}
+
+textarea:focus{
+    border: #7f43b6 !important;
+    box-shadow: 0 0 0 0.2rem rgba(127, 67, 182, .25) !important;
+
+}
+
+.dropdown-toggle{
+    background-color: var(--color-text-muted) !important;
+    border: none !important;
+    color: var(--color-input-bg);
+    
+}
