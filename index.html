@@ -47,79 +47,131 @@
             </div>
           </div>
 
-<form id="image-options-form">
-  <div class="row g-3 align-items-center">
-    <!-- Model -->
-    <div class="col-12 col-md-3">
-      <label for="model-select" class="form-label">Select Model</label>
-      <select id="model-select" name="model" class="form-select">
-        <option value="model1">Model 1</option>
-        <option value="model2">Model 2</option>
-        <option value="model3">Model 3</option>
-      </select>
-    </div>
+          <form id="image-options-form" class="mb-4">
+            <div class="row g-3 align-items-center">
+              <!-- Model -->
+              <div class="col-12 col-md-3">
 
-    <!-- Image Count -->
-    <div class="col-12 col-md-3">
-      <label for="count-select" class="form-label">Image Count</label>
-      <select id="count-select" name="count" class="form-select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-    </div>
+                <select id="model-select" name="model" class="form-select">
+                  <option value="0">Select Model</option>
+                  <option value="model1">Model 1</option>
+                  <option value="model2">Model 2</option>
+                  <option value="model3">Model 3</option>
+                </select>
+              </div>
 
-    <!-- Aspect Ratio -->
-    <div class="col-12 col-md-3">
-      <label for="ratio-select" class="form-label">Aspect Ratio</label>
-      <select id="ratio-select" name="ratio" class="form-select">
-        <option value="1:1">1:1</option>
-        <option value="4:3">4:3</option>
-        <option value="16:9">16:9</option>
-      </select>
-    </div>
+              <!-- Image Count -->
+              <div class="col-12 col-md-3">
 
-    <!-- Generate Button -->
-    <div class="col-12 col-md-3">
-      <button type="submit" class="btn btn-primary w-100">
-        <i class="fa-solid fa-wand-sparkles"></i> Generate Image
-      </button>
-    </div>
-  </div>
-</form>
+                <select id="count-select" name="count" class="form-select">
+                  <option value="0">Image Count</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+
+              <!-- Aspect Ratio -->
+              <div class="col-12 col-md-3">
+
+                <select id="ratio-select" name="ratio" class="form-select">
+                  <option value="0">Aspect Ratio</option>
+                  <option value="1:1">1:1</option>
+                  <option value="4:3">4:3</option>
+                  <option value="16:9">16:9</option>
+                </select>
+              </div>
+
+              <!-- Generate Button -->
+              <div class="col-12 col-md-3">
+                <button type="submit" class="btn btn-primary w-100">
+                  <i class="fa-solid fa-wand-sparkles"></i> Generate Image
+                </button>
+              </div>
+            </div>
+          </form>
 
 
 
 
-          <div class="images-area">
+          <div class="images-area d-none">
             <!-- generated images will appear here -->
             <div class="row">
-              <div class="col-md-4 col-lg-3">
-                <div class="img-container  w-100 d-flex justify-content-center align-items-center border bg-dark"
-                  height="500px">
+              <div class="col-md-4 col-lg-3 ">
+                <div class="img-item position-relative">
+                  <div
+                    class="img-container  w-100 d-flex justify-content-center align-items-center border bg-dark rounded-4"
+                    height="300px">
+                    <img src="images/test.jpg" alt="Generated Image 1" class="img-fluid rounded-4" />
+                  </div>
 
-
+                  <div
+                    class="overlay position-absolute w-100 h-100 d-flex justify-content-end align-items-end rounded-4">
+                    <button class="btn download-btn rounded-circle d-flex justify-content-center align-items-center p-3"
+                      width="30" height="50" aria-label="Download Image">
+                      <i class="fa-solid fa-download"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4 col-lg-3">
-                <div class="img-container h-100 w-100 d-flex justify-content-center align-items-center border">
-                  Image
 
+              <div class="col-md-4 col-lg-3 ">
+                <div class="img-item position-relative">
+                  <div
+                    class="img-container  w-100 d-flex justify-content-center align-items-center border bg-dark rounded-4"
+                    height="300px">
+                    <img src="images/test.jpg" alt="Generated Image 1" class="img-fluid rounded-4" />
+                  </div>
+
+                  <div
+                    class="overlay position-absolute w-100 h-100 d-flex justify-content-end align-items-end rounded-4">
+                    <button class="btn download-btn rounded-circle d-flex justify-content-center align-items-center p-3"
+                      width="30" height="50" aria-label="Download Image">
+                      <i class="fa-solid fa-download"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4 col-lg-3">
-                <div class="img-container h-100 w-100 d-flex justify-content-center align-items-center border">
-                  Image
 
+              <div class="col-md-4 col-lg-3 ">
+                <div class="img-item position-relative">
+                  <div
+                    class="img-container  w-100 d-flex justify-content-center align-items-center border bg-dark rounded-4"
+                    height="300px">
+                    <img src="images/test.jpg" alt="Generated Image 1" class="img-fluid rounded-4" />
+                  </div>
+
+                  <div
+                    class="overlay position-absolute w-100 h-100 d-flex justify-content-end align-items-end rounded-4">
+                    <button class="btn download-btn rounded-circle d-flex justify-content-center align-items-center p-3"
+                      width="30" height="50" aria-label="Download Image">
+                      <i class="fa-solid fa-download"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4 col-lg-3">
-                <div class="img-container h-100 w-100 d-flex justify-content-center align-items-center border">
-                  Image
 
+              <div class="col-md-4 col-lg-3 ">
+                <div class="img-item position-relative">
+                  <div
+                    class="img-container  w-100 d-flex justify-content-center align-items-center border bg-dark rounded-4"
+                    height="300px">
+                    <img src="images/test.jpg" alt="Generated Image 1" class="img-fluid rounded-4" />
+                  </div>
+
+                  <div
+                    class="overlay position-absolute w-100 h-100 d-flex justify-content-end align-items-end rounded-4">
+                    <button class="btn download-btn rounded-circle d-flex justify-content-center align-items-center p-3"
+                      width="30" height="50" aria-label="Download Image">
+                      <i class="fa-solid fa-download"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
+
+
+
             </div>
           </div>
         </div>

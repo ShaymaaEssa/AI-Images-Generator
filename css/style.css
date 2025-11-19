@@ -90,3 +90,49 @@ textarea:focus{
     color: var(--color-input-bg);
     
 }
+
+.download-btn, .download-btn:hover{
+    background-color: var(--color-border);
+    color: #fff;
+    border: none;
+    transition: .3s;
+}
+
+.download-btn:hover{
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+
+.img-item{
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 0 0 1rem 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.img-item:hover{
+  cursor: pointer;
+  transform: translateY(-10%);
+}
+
+.img-item:hover .overlay{
+    opacity: 1;
+}
